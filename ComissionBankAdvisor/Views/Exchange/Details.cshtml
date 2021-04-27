@@ -1,0 +1,51 @@
+﻿@model Exchange
+@{
+    ViewData["Title"] = "Detalhes do Câmbio";
+}
+<h3>@ViewData["Title"]</h3>
+<hr />
+
+<div>
+    <div class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClientName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AdvisorInitials)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdvisorInitials)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GrossValue)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GrossValue)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Value)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Spread)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Spread)
+        </dd>
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-default">Edit</a>&nbsp;&nbsp;
+    <a asp-action="Index">Voltar</a>
+</div>
